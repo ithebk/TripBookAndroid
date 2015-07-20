@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TripBook</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">TripBook Opened</string>
+    <string name="drawer_close">tripBook Closed</string>
+    <string name="search">Search</string>
+    <string name="infospinner">infospinner</string>
+    <string name="app_namestart">Welcome to TripBook</string>
+     <string name="refresh">Refresh</string>
+    
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >Explore</item>
+        <item >Itinerary Planner</item>
+        <item >TripDiary</item>
+        <item>Reviews</item>
+         <item >Add Post</item>
+        <item >About</item>
+       
+        <item>Location</item>>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_whatstrending</item>
+        <item>@drawable/ic_expencemanager</item>
+        <item>@drawable/ic_lasttrip</item>
+         <item>@drawable/ic_tripdairy</item>
+         <item>@drawable/ic_addphotos</item>
+        <item>@drawable/ic_networks</item>
+        
+       
+        <item>@drawable/ic_location</item>>
+    </array>
+     <string name="btnTakePicture">Capture Image</string>
+    <string name="btnRecordVideo">Record Video</string>
+    <string name="or">(or)</string>
+    <string name="btnUploadToServer">Upload to Server</string>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="refresh_coordinates">Refresh Coordinates</string>
+    <string name="skip">Skip</string>
+    <string name="new_user">New User</string>
+    <string name="welcome_n_go_from_here">Welcome\nGo From Here</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="login_success">Login Success</string>
+    <string name="continue1">Continue</string>
+    <string name="email">Email</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_emailid">Enter Email</string>
+    <string name="enter_password_again">Enter Password Again</string>
+    <string name="fbsu">Facebook</string>
+    <string name="goosu">Google</string>
+    <string name="search_everything">Search Everything</string>
+    <string name="login_required">Login Required</string>
+    <string name="connect">OR</string>
+    <string name="welcome">Welcome</string>
+    <string name="loading">Loading please wait..</string>
+    <string name="name">Name</string>
+    <string name="money">Money</string>
+    <string name="desciption">Description</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="enter_money_in_inr">Enter Money in INR</string>
+    <string name="save">Save</string>
+    <string name="load">Load</string>
+    <string name="graph">Graph</string>
+    <string name="export">Export</string>
+    <string name="add_photo">Add Photos</string>
+    <string name="loaction">Location</string>
+    <string name="add_location">Location</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="add_some_places">Add Some Places</string>
+    <string name="map">Map</string>
+
+</resources>

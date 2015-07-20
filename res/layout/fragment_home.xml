@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" 
+  >
+
+    <EditText
+        android:id="@+id/etfrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/edittext_default_bg"
+        android:drawableLeft="@drawable/ic_from"
+        android:ems="10"
+        android:hint="@string/from"
+        android:inputType="textAutoComplete"
+        android:padding="10dp"
+        android:textColorHint="#bbbbbb"
+        android:textCursorDrawable="@drawable/color_cursor" 
+       >
+  
+        <requestFocus />
+      
+    </EditText>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/etVia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/edittext_bottom_bg"
+        android:drawableLeft="@drawable/ic_midleplace"
+        android:hint="@string/add_some_places"
+        android:inputType="textAutoComplete"
+        android:padding="10dp"
+        android:textColorHint="#bbbbbb"
+        android:textCursorDrawable="@drawable/color_cursor" />
+
+    <EditText
+         android:visibility="gone"
+        android:id="@+id/etto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/edittext_bottom_bg"
+        android:drawableLeft="@drawable/ic_to"
+        android:hint="@string/to"
+        android:inputType="textAutoComplete"
+        android:padding="10dp"
+        android:textColorHint="#bbbbbb"
+        android:textCursorDrawable="@drawable/color_cursor" />
+    
+    
+      <Button
+          android:id="@+id/btnSearch"
+          style="@style/DefaultButtonText"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/button_default_bg"
+          android:padding="10dp"
+          android:text="@string/search" />
+	<com.google.android.gms.maps.MapView
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/map1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" />
+
+</LinearLayout>

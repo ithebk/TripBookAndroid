@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MyCustomTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom" >
+
+    <!-- 
+    <TextView
+        android:id="@+id/txtLabel"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:text="Home View"/>
+    
+    <ImageView android:layout_width="wrap_content"
+        
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLabel"
+        android:src="@drawable/ic_home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    
+-->
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/buttonrefresh"
+        style="@style/DefaultButtonText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+       
+        android:text="@string/refresh"
+        android:visibility="gone" 
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:background="@drawable/button_2"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar1web"
+        style="?android:attr/progressBarStyleHorizontal"
+                 
+   android:background="#1E88E5"
+    
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="-5dp"
+        android:layout_alignParentRight="true"
+         />
+
+    <TextView
+        android:id="@+id/loadin"
+        style="@style/DefaultButtonText2"
+        android:background="#1E88E5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/progressBar1web"
+        android:text="@string/loading"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+<!-- 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#000"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    -->
+
+</RelativeLayout>

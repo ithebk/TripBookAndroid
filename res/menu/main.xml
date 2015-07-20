@@ -1,0 +1,54 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+       
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item android:id="@+id/action_search"
+        	
+        	android:title="@string/search"
+        	android:icon="@drawable/ic_action"
+        	
+        	android:showAsAction="ifRoom|collapseActionView"
+  			android:actionViewClass="android.widget.SearchView"
+        
+        	/>
+    <!-- More -->
+    <item
+       
+        android:id="@+id/a_More"
+        android:icon="@drawable/ic_login"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="User Info">
+        <menu>
+
+            <!-- Refresh -->
+            <item
+                android:id="@+id/action_user"
+               android:icon="@drawable/ic_loginsucces"
+                android:showAsAction="never"
+                android:title="User"
+                />
+
+            <!-- Help -->
+            <item
+                
+                android:id="@+id/action_editinfo"
+                android:icon="@drawable/ic_editinfo"
+                android:showAsAction="never"
+                android:title="Edit Info"/>
+
+            <!-- Check updates -->
+            <item
+                android:id="@+id/action_signout"
+                android:icon="@drawable/ic_logout"
+                android:showAsAction="never"
+                android:title="Signout"/>
+        </menu>
+    </item>
+
+     
+
+</menu>

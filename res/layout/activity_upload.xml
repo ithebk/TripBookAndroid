@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+       android:background="@color/view_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    
+    
+     >
+
+    <!-- To display picture taken -->
+
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:layout_marginTop="15dp"/>
+
+    <!-- Videoview to preview recorded video -->
+
+    
+
+    <TextView
+        android:id="@+id/txtPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/txt_font"
+        android:textSize="30dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="35dp" 
+        android:visibility="gone"/>
+
+    <EditText
+            android:id="@+id/etplace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:background="@drawable/edittext_default_bg"
+           android:drawableLeft="@drawable/ic_location"
+            android:hint="Enter Place"
+            android:inputType="textWebEditText"
+            android:padding="10dp"
+            android:textColorHint="#bbbbbb"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    
+    
+        <EditText
+            android:padding="10dp"
+            android:id="@+id/etExp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/edittext_default_bg"
+           
+            android:hint="Whats Your Experince"
+            android:inputType="textMultiLine"
+            
+            android:maxLines="40"
+            android:textColorHint="#bbbbbb"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/btn_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Submit"
+        android:textColor="@color/white" 
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>
+</ScrollView>

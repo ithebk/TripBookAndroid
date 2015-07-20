@@ -1,0 +1,248 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <!--
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="0" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/load1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Text1" />
+
+            <Button
+                android:id="@+id/load2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Text1" />
+
+            <Button
+                android:id="@+id/load3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Text1" />
+
+            <Button
+                android:id="@+id/load4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Text1" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+         android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="#3EB489">
+
+        <TextView
+            android:id="@+id/button2"
+            style="@style/DefaultButtonText2"
+            android:layout_width="111dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:background="@drawable/button_3"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/name"
+            android:textSize="20sp" 
+            android:drawableLeft="@drawable/ic_exname"/>
+
+        <EditText
+            android:id="@+id/etname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+           
+            android:background="@drawable/edittext_default_bg"
+            android:hint="@string/enter_username"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColorHint="#bbbbbb"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" 
+         android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="#3EB489">
+
+        <TextView
+            android:id="@+id/tvManey"
+            style="@style/DefaultButtonText2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:drawableLeft="@drawable/ic_inr"
+            android:background="@drawable/button_4"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/money"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etmoney"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="-2dp"
+            android:background="@drawable/edittext_default_bg"
+            android:hint="@string/enter_money_in_inr"
+            android:inputType="number"
+            
+            android:padding="10dp"
+            android:textColorHint="#bbbbbb"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/etdescr"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="-2dp"
+            android:layout_weight="0.01"
+            android:background="@drawable/edittext_default_bg"
+            android:hint="@string/enter_description"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColorHint="#bbbbbb"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+
+        <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginTop="30dp"
+        
+         >
+
+        <Button
+            android:id="@+id/btAddPhoto"
+            style="@style/DefaultButtonText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:background="@drawable/button_1"
+            android:drawableLeft="@drawable/ic_addphotos"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/add_photo"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/currloc"
+            style="@style/DefaultButtonText"
+            android:layout_width="0dp"
+           
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@drawable/button_1"
+            android:drawableLeft="@drawable/ic_map"
+            android:paddingLeft="10dp"
+            android:text="@string/add_location"
+            android:textColor="#000"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00" 
+            android:paddingRight="10dp"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" 
+               
+                 
+              
+                >
+                  <View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#000" />
+                <Button
+                    android:paddingLeft="10dp"
+                   android:paddingRight="20dp"
+                   
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save"
+                   
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:background="@drawable/button_1"
+                    android:drawableLeft="@drawable/ic_save"
+                   >
+                   
+                    </Button>
+                 <Button
+                     android:paddingRight="10dp"
+                    
+                     android:background="@drawable/button_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/load"
+                    
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:drawableLeft="@drawable/ic_load">
+                    </Button>
+                    
+                 <Button
+                     android:paddingRight="10dp"
+                     
+                     android:background="@drawable/button_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/graph"
+                   
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:drawableLeft="@drawable/ic_graph"
+                    
+                    >
+                    </Button>
+                 
+                   <Button
+                       
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/button_1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/export"
+                   
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:drawableLeft="@drawable/ic_export">
+                    </Button>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+</LinearLayout>
